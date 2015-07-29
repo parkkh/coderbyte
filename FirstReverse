@@ -1,0 +1,8 @@
+def FirstReverse(str)
+
+ r = String.new
+  r = str.to_s.reverse
+  return r
+         
+end
+   
