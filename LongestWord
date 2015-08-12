@@ -1,0 +1,15 @@
+def LongestWord(sen)
+  
+  int= 0
+  long = ""
+  sen.split(/\W+/).each{|s| 
+   if int < s.length 
+     int = s.length
+     long = s
+   end}
+
+
+  
+  return  long
+         
+end
