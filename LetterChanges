@@ -1,0 +1,24 @@
+def LetterChanges(str)
+  word=""
+  str.each_byte {|o| 
+    if o >=97 && o <=122
+    o=o+1
+    end
+    if o ==123
+      o = 65
+    elsif o == 101
+      o = 69
+     elsif o == 105
+      o = 73
+      elsif o == 111
+      o = 79
+      elsif o == 117
+      o = 85
+    end
+    word << o.chr 
+    
+    }
+    # code goes here
+    return word 
+         
+end
